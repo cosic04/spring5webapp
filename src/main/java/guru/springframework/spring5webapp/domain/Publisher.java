@@ -24,7 +24,7 @@ public class Publisher {
 
 /*    @OneToMany(mappedBy="publisher",
             cascade = CascadeType.ALL)*/
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "publisher_id")
     private Set<Book> books = new HashSet<>();
 
